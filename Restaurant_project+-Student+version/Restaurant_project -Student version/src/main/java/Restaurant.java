@@ -61,17 +61,17 @@ public class Restaurant {
     }
 
 
-//    public int displayTotalOrderValue(List<String> order){
-//        int sum = 0;
-//        int n = 0;
-//        for(String orderedItem: order) {
-//            for(Item itemName : menu) {
-//               if(orderedItem == itemName.getName()){
-//                   sum = sum + itemName.getPrice();
-//               }
-//            }
-//        }
-//        return sum;
-//    }
+    public int displayTotalOrderValue(List<String> order){
+        int sum = 0;
+        int n = 0;
+        for(String orderedItem: order) {
+            for(Item itemName : menu) {
+               if(orderedItem == itemName.getName()){
+                   sum = sum + itemName.getPrice();
+               }
+            }
+        }
+        return sum;
+    }
 
 }

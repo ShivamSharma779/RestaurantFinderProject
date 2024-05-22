@@ -92,14 +92,14 @@ class RestaurantTest {
 //    the method displayTotalOrder value should be provided with the List of selected items from the menu.
 //    We will create a list of names i.e. List of String object from the menu of the restaurant and
 //    pass it as a parameter to the displayTotalOrder method.
-//    @Test
-//    public void test_to_display_total_order_value_of_selected_item(){
-//        int expectedValue = 119+269;
-//        ArrayList<String> order = new ArrayList<>();
-//        order.add("Sweet corn soup");
-//        order.add("Vegetable lasagne");
-//        assertEquals(expectedValue,restaurant.displayTotalOrderValue(order));
-//
-//    }
+    @Test
+    public void test_to_display_total_order_value_of_selected_item(){
+        int expectedValue = 119+269;
+        ArrayList<String> order = new ArrayList<>();
+        order.add("Sweet corn soup");
+        order.add("Vegetable lasagne");
+        assertEquals(expectedValue,restaurant.displayTotalOrderValue(order));
+
+    }
 
 }
